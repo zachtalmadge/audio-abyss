@@ -20,10 +20,19 @@
         <!-- button for form modal-->
         <button class="btn btn-outline-warning" data-toggle="modal" data-target="#formModal">Add a song</button>
       </div>
-    </div>
+    </div><!-- end jumbotron -->
+
+    <!-- card component for displaying singles -->
+    <div class="container">
+      <div class="row">
+        <div class="card-group">
+          <!-- rendered songs will appear here-->
+        </div>
+      </div> <!-- end row-->
+    </div><!-- end container-->
 
     <!-- Modal -->
-    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+    <div class="modal fade" id="formModal" tabindex="-1">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
@@ -31,7 +40,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-          </div>
+          </div> <!-- end modal header-->
           <div class="modal-body">
             <!-- start of form -->
             <form>
@@ -53,16 +62,16 @@
               </div> <!-- form control -->
               <div class="form-group">
                 <label>Release Year</label>
-                <input type="number" class="form-control" name="release-year" value="2000"required>
+                <input type="number" class="form-control" name="release-year" value="2023" max="2023" min="1890" required>
               </div> <!-- form control -->
             </form>
-          </div>
+          </div> <!--- end modal body-->
           <div class="modal-footer">
             <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </div>
-      </div>
-    </div>
+          </div> <!-- end footer-->
+        </div> <!-- end modal content-->
+      </div> <!-- end modal dialog-->
+    </div> <!-- end modal -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
