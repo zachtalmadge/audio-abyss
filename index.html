@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Audio Abyss</title>
   </head>
@@ -27,9 +29,29 @@
     <div id="card-container" class="container">
     </div><!-- end container-->
 
-    <!-- footer -->
-    <div class="container-fluid bg-dark">
+    <!-- Footer -->
+    <div class="container-fluid bg-dark py-5 text-center" style="height: 100vh">
       <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="lead text-light">Developers</p>
+            <p class="lead text-light">Tiana Lopez</p>
+            <p class="lead text-light">Wesley Smith</p>
+            <p class="lead text-light">Zachary Talmadge</p>
+          </div><!-- end col -->
+          <div class="col-md-4">
+            <p class="lead text-light">This project is brought to you by:</p>
+            <img src="./assets/fis_logo.png" class="img-fluid rounded" alt="Flatiron School logo">
+            <p class="lead text-light mt-3">Flatiron School</p>
+          </div><!-- end col -->
+          <div class="col-md-4" style="font-size: 45px;">
+            <i class="fab fa-facebook text-white"></i>
+            <i class="fab fa-linkedin text-white"></i>
+            <i class="fab fa-github text-white"></i>
+            <i class="fab fa-twitter text-white"></i>
+            <i class="fab fa-instagram text-white"></i>
+          </div><!-- end col -->
+        </div> <!-- end row-->
       </div> <!-- end container -->
     </div> <!-- end container fluid -->
 
@@ -44,7 +66,7 @@
             </button>
           </div> <!-- end modal header-->
           <div class="modal-body">
-            <img id="songDetailAlbumArt" src="" class="img-fluid" alt="album art">
+            <img id="songDetailAlbumArt" src="https://i.scdn.co/image/ab67616d0000b2736976009675621c80cafa1ff5" class="img-fluid" alt="album art">
             <h2 id="songDetailName">EXAMPLE TEXT<!--name will go here--> </h2>
             <h3 id="songDetailArtist">EXAMPLE TEXT<!-- aritst will go here--> </h3>
             <h3 id="songDetailAlbum">EXAMPLE TEXT<!-- album will go here--> </h3>
