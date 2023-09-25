@@ -13,11 +13,25 @@ const fetchSongs = () => {
 }
 
 const renderSongCard = (song) => {
-    const songImage = document.createElement("img")
-    songImage.src = song.image
-    songImage.alt = song.song
-    // Append created elements to the targeted card-container element
-    songDisplayCards.append(songImage)
+
+    const colContent = `
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="${song.image}" alt="${song.song}">
+        <div class="card-body">
+          <h5 class="card-title">${song.song}</h5>
+          <p class="card-text">
+          Artist: ${song.artist} <br>
+          Album: ${song.album} <br>
+          </p>
+          <button data-id="${song.id}" class="btn btn-primary" data-toggle="modal" data-target="#songDetailModal">Details</button>
+          <button class="btn btn-outline-danger"><i class="far fa-heart"></i></button>
+        </div>
+      </div>
+    </div>
+    `
+
+    songDisplayCards.innerHTML += colContent
 }
 
 function displayRandomSongs(songsArray) {
