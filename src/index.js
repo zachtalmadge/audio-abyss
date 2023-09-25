@@ -6,6 +6,7 @@ const addSongEventListener = () => {
     event.preventDefault();
 
     console.log('clicked')
+    addSongForm.reset();
   })
 }
 addSongEventListener();
