@@ -9,6 +9,7 @@ const fetchSongs = () => {
     fetch(URL)
     .then(response => response.json())
     .then(songsArray => displayRandomSongs(songsArray))
+    .catch(error => alert(error))
 }
 
 const renderSongCard = (song) => {
@@ -63,6 +64,7 @@ refreshSongs()
 
 
 //! TIANA'S CODE
+
 const addSongEventListener = () => {
   addSongForm.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -70,12 +72,31 @@ const addSongEventListener = () => {
     let titleInput = event.target['song-title'].value
     let artistInput = event.target.artist.value
     let albumInput = event.target.album.value
+    let albumImgUrl = event.target['album-img-url'].value
     let genreInput = event.target.genre.value
     let releaseYearInput = event.target['release-year'].value
 
-    debugger;
-
-    //function to open module showing song card for what you just added
+    //fetch request
+    fetch(URL, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          song: titleInput,
+          artist: artistInput,
+          album: albumInput,
+          likes: 0,
+          releaseYear: releaseYearInput,
+          genre: genreInput,
+          image: albumImgUrl
+        })
+      })
+      .then(resp => resp.json())
+      .then(newSongObj => console.log(newSongObj))
+      .catch(error => alert(error))
+    //function to do a patch request
     addSongForm.reset();
   })
 }
