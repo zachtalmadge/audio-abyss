@@ -25,18 +25,18 @@ function displayRandomSongs(songsArray) {
     const selectedSongs = [];
     // while the length is less than 6
     while (selectedSongs.length < 6) {
-    const randomIndex = Math.floor(Math.random() * songsArray.length);
-    // if the selected songs array does not have the song already in it
-    if (!selectedSongs.includes(songsArray[randomIndex])) {
-    selectedSongs.push(songsArray[randomIndex]);
-    }
+      const randomIndex = Math.floor(Math.random() * songsArray.length);
+      // if the selected songs array does not have the song already in it
+      if (!selectedSongs.includes(songsArray[randomIndex])) {
+        selectedSongs.push(songsArray[randomIndex]);
+      }
     }
     selectedSongs.forEach(song => renderSongCard(song))
     // Create a Bootstrap row
     const row = document.createElement('div');
     row.className = 'row';
     songDisplayCards.appendChild(row)
-    }
+}
 
 //remove all children of element
 const clearElement = (element) => {
@@ -54,14 +54,9 @@ const clearElement = (element) => {
     })
   }
 
-
-
-
 //Call functions
 fetchSongs()
 refreshSongs()
-
-
 
 //! TIANA'S CODE
 
@@ -102,6 +97,5 @@ const addSongEventListener = () => {
 }
 //Call functions
 addSongEventListener();
-
 
 //! ZACH'S CODE
