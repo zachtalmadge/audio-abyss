@@ -359,36 +359,6 @@
       "genre": "Alternative",
       "image": "https://i.scdn.co/image/ab67616d0000b273b1f8da74f225fa1225cdface",
       "id": 35
-    },
-    {
-      "song": "Hello Goodbye",
-      "artist": "the beatles",
-      "album": "idk",
-      "likes": 0,
-      "releaseYear": "2015",
-      "genre": "rick",
-      "image": "here",
-      "id": 36
-    },
-    {
-      "song": "Hello Goodbye",
-      "artist": "the beatles",
-      "album": "idk",
-      "likes": 0,
-      "releaseYear": "2016",
-      "genre": "rick",
-      "image": "here",
-      "id": 37
-    },
-    {
-      "song": "Hello Goodbye",
-      "artist": "the beatles",
-      "album": "idk",
-      "likes": 0,
-      "releaseYear": "1890",
-      "genre": "rick",
-      "image": "here",
-      "id": 38
     }
   ]
 }
