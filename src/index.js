@@ -1,6 +1,7 @@
 // GLOBAL VARIABLES
 const URL = "http://localhost:3000/songs"
 const songDisplayCards = document.querySelector('#card-container')
+const addSongForm = document.querySelector('#submit-new-song')
 
 //! WESLEY'S CODE
 const fetchSongs = () => {
@@ -13,7 +14,7 @@ const renderSongCard = (song) => {
     const songImage = document.createElement("img")
     songImage.src = song.image
     songImage.alt = song.song
-    // Append created elements to the targeted card-conatiner element
+    // Append created elements to the targeted card-container element
     songDisplayCards.append(songImage)
 }
 
@@ -34,16 +35,23 @@ function displayRandomSongs(songsArray) {
     row.className = 'row';
     songDisplayCards.appendChild(row)
     }
-    
 
 
+//Call functions
 fetchSongs()
+
 //! TIANA'S CODE
+const addSongEventListener = () => {
+  addSongForm.addEventListener('submit', (event) => {
+    event.preventDefault();
 
 
-
-
-
+    console.log('clicked')
+    addSongForm.reset();
+  })
+}
+//Call functions
+addSongEventListener();
 
 
 //! ZACH'S CODE
