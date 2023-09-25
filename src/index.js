@@ -3,6 +3,13 @@ const URL = "http://localhost:3000/songs"
 const songDisplayCards = document.querySelector('#card-container')
 const addSongForm = document.querySelector('#submit-new-song')
 const refreshButton = document.querySelector('#refresh-button')
+// song detail modal nodes
+const songDetailName = document.querySelector('#songDetailName')
+const songDetailArtist = document.querySelector('#songDetailArtist')
+const songDetailAlbum = document.querySelector('#songDetailAlbum')
+const songDetailReleaseYear = document.querySelector('#songDetailReleaseYear')
+const songDetailGenre = document.querySelector('#songDetailGenre')
+const songDetailAlbumArt = document.querySelector('#songDetailAlbumArt')
 
 //! WESLEY'S CODE
 const fetchSongs = () => {
@@ -24,7 +31,7 @@ const renderSongCard = (song) => {
           Artist: ${song.artist} <br>
           Album: ${song.album} <br>
           </p>
-          <button data-id="${song.id}" class="btn btn-primary" data-toggle="modal" data-target="#songDetailModal">Details</button>
+          <button data-name="${song.song}" class="btn btn-primary details" data-toggle="modal" data-target="#songDetailModal">Details</button>
           <button class="btn btn-outline-danger"><i class="far fa-heart"></i></button>
         </div>
       </div>
@@ -46,11 +53,14 @@ function displayRandomSongs(songsArray) {
       }
     }
     selectedSongs.forEach(song => renderSongCard(song))
-    // Create a Bootstrap row
-    const row = document.createElement('div');
-    row.className = 'row';
-    songDisplayCards.appendChild(row)
+    //attach event listener
+    document.querySelectorAll('.details').forEach(node => {
+      node.addEventListener('click', (e) => {
+        displaySongDetails(e.target.dataset.name)
+      })
+    })
 }
+
 
 //remove all children of element
 const clearElement = (element) => {
@@ -104,7 +114,7 @@ const addSongEventListener = () => {
         })
       })
       .then(resp => resp.json())
-      .then(newSongObj => console.log(newSongObj))
+      .then(() => { displaySongDetails(titleInput) })
       .catch(error => alert(error))
     addSongForm.reset();
   })
@@ -113,3 +123,28 @@ const addSongEventListener = () => {
 addSongEventListener();
 
 //! ZACH'S CODE
+
+// add functionality to display song details
+
+async function displaySongDetails(name){
+    // attach song details
+    let response = await fetch(URL)
+    let songsArray = await response.json()
+    console.log(name)
+    let song = songsArray.find(x => x.song === name)
+    console.log(song)
+
+    songDetailName.textContent = song.song
+    songDetailArtist.textContent = `Artist: ${song.artist}`
+    songDetailAlbum.textContent = `Album: ${song.album}`
+    songDetailReleaseYear.textContent = `Release year: ${song.releaseYear}`
+    songDetailGenre.textContent = `Genre: ${song.genre}`
+    songDetailAlbumArt.src = song.image
+ 
+}
+
+// like button functionality
+
+// color changing thing
+
+// hover effect
