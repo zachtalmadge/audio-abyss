@@ -2,6 +2,7 @@
 const URL = "http://localhost:3000/songs"
 const songDisplayCards = document.querySelector('#card-container')
 const addSongForm = document.querySelector('#submit-new-song')
+const refreshButton = document.querySelector('#refresh-button')
 
 //! WESLEY'S CODE
 const fetchSongs = () => {
@@ -37,8 +38,18 @@ function displayRandomSongs(songsArray) {
     }
 
 
+  const refreshSongs = () => {
+    refreshButton.addEventListener('click', () => fetchSongs())
+  }
+
+
+
+
 //Call functions
 fetchSongs()
+refreshSongs()
+
+
 
 //! TIANA'S CODE
 const addSongEventListener = () => {
