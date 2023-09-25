@@ -48,7 +48,7 @@ const clearElement = (element) => {
 //refresh button event listener
   const refreshSongs = () => {
     refreshButton.addEventListener('click', () => {
-
+      clearElement(songDisplayCards)
       fetchSongs()
     })
   }
