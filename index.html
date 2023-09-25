@@ -93,7 +93,7 @@
             </button>
           </div> <!-- end modal header-->
           <div class="modal-body">
-            <form>
+            <form id="submit-new-song">
               <div class="form-group">
                 <label>Song Title</label>
                 <input type="text" class="form-control" name="song-title" required>
@@ -112,13 +112,13 @@
               </div> <!-- form control -->
               <div class="form-group">
                 <label>Release Year</label>
-                <input type="number" class="form-control" name="release-year" value="2023" max="2023" min="1890" required>
+                <input type="number" class="form-control" name="release-year" max="2023" min="1890" required>
               </div> <!-- form control -->
+               <div class="modal-footer"> <!--start footer -->
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div> <!-- end footer-->
             </form>
           </div> <!--- end modal body-->
-          <div class="modal-footer">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div> <!-- end footer-->
         </div> <!-- end modal content-->
       </div> <!-- end modal dialog-->
     </div> <!-- end modal -->
