@@ -37,9 +37,20 @@ function displayRandomSongs(songsArray) {
     songDisplayCards.appendChild(row)
     }
 
-
+//remove all children of element
+const clearElement = (element) => {
+  let child = element.lastElementChild
+  while (child) {
+    element.removeChild(child)
+    child = element.lastElementChild
+  }
+}
+//refresh button event listener
   const refreshSongs = () => {
-    refreshButton.addEventListener('click', () => fetchSongs())
+    refreshButton.addEventListener('click', () => {
+
+      fetchSongs()
+    })
   }
 
 
