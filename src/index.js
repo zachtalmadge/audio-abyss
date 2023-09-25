@@ -67,8 +67,15 @@ const addSongEventListener = () => {
   addSongForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
+    let titleInput = event.target['song-title'].value
+    let artistInput = event.target.artist.value
+    let albumInput = event.target.album.value
+    let genreInput = event.target.genre.value
+    let releaseYearInput = event.target['release-year'].value
 
-    console.log('clicked')
+    debugger;
+
+    //function to open module showing song card for what you just added
     addSongForm.reset();
   })
 }
