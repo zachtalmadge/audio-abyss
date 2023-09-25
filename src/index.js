@@ -9,6 +9,14 @@ const fetchSongs = () => {
     .then(songsArray => displayRandomSongs(songsArray))
 }
 
+const renderSongCard = (song) => {
+    const songImage = document.createElement("img")
+    songImage.src = song.image
+    songImage.alt = song.song
+    // Append created elements to the targeted card-conatiner element
+    songDisplayCards.append(songImage)
+}
+
 function displayRandomSongs(songsArray) {
     // Randomly select 6 songs
     const selectedSongs = [];
