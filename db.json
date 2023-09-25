@@ -1,160 +1,394 @@
 {
-    "songs": [
-        {
-            "id": 0,
-            "song": "Losing Control",
-            "artist": "Odd Mob",
-            "album": "Losing Control",
-            "likes": 659,
-            "releaseYear": "2023",
-            "genre": "House",
-            "image": "https://i.scdn.co/image/ab67616d00001e027f716a9fa5490b70c634821c"
-          },
-          {
-            "id": 1,
-            "song": "React",
-            "artist": "Switch Disco",
-            "album": "React",
-            "likes": 238,
-            "releaseYear": "2022",
-            "genre": "House",
-            "image": "https://i1.sndcdn.com/artworks-q2HSfSyq5idF-0-t500x500.jpg"
-          },
-          {
-            "id": 2,
-            "song": "Atmosphere",
-            "artist": "Fisher",
-            "album": "Atmosphere",
-            "likes": 1024,
-            "releaseYear": "2023",
-            "genre": "House",
-            "image": "https://alltimeedm.com/wp-content/uploads/2023/08/atmosphere-cover-jpg.webp"
-          },
-          {
-            "id": 3,
-            "song": "Badders",
-            "artist": "Peekaboo",
-            "album": "Badders",
-            "likes": 659,
-            "releaseYear": "2023",
-            "genre": "Dubstep",
-            "image": "https://i.scdn.co/image/ab67616d0000b2731802f280768fd38dc14f9291"
-          },
-          {
-            "id": 4,
-            "song": "The Slab",
-            "artist": "Big City",
-            "album": "The Slab",
-            "likes": 896,
-            "releaseYear": "2021",
-            "genre": "Dubstep",
-            "image": "https://progarchy.files.wordpress.com/2023/07/bbt-ingenious-devices.jpg?w=300"
-          },
-          {
-            "id": 5,
-            "song": "Tomboy",
-            "artist": "Hyukoh",
-            "album": "23",
-            "likes": 695,
-            "releaseYear": 2017,
-            "genre": "Indie",
-            "image": "https://i.scdn.co/image/ab67616d0000b2736b0b72f94905f2321564a20f"
-          
-          },
-          {
-            "id": 6,
-            "song": "Who Do You Love",
-            "artist": "The Black Skirts",
-            "album": "TEAM BABY",
-            "likes": 485,
-            "releaseYear": 2017,
-            "genre": "Indie",
-            "image": "https://i.scdn.co/image/ab67616d0000b27310b3ebc65d2f65964cf461d8"
-          
-          },
-          {
-            "id": 7,
-            "song": "Karma",
-            "artist": "Sarah Kinsley",
-            "album": "Karma",
-            "likes": 816,
-            "releaseYear": 2021,
-            "genre": "Pop",
-            "image": "https://i.scdn.co/image/ab67616d0000b273ba8797def1a9eec548ebfdbb"
-          
-          },
-          {
-            "id": 8,
-            "song": "There Is a Light That Never Goes Out",
-            "artist": "The Smiths",
-            "album": "The Queen Is Dead",
-            "likes": 778,
-            "releaseYear": 1986,
-            "genre": "Indie",
-            "image": "https://i.scdn.co/image/ab67616d0000b2738abb33c7671ca773e148fef7"
-          
-          },
-          {
-            "id": 9,
-            "song": "Restless",
-            "artist": "BIBI",
-            "album": "Restless",
-            "likes": 263,
-            "releaseYear": 2020,
-            "genre": "Pop",
-            "image": "https://i.scdn.co/image/ab67616d00001e02af13d05d63fc8199472511d3"
-          
-          },
-          {
-            "id": 10,
-            "song": "American Idiot",
-            "artist": "Green Day",
-            "album": "American Idiot",
-            "likes": 284,
-            "releaseYear": 2004,
-            "genre": "Rock",
-            "image": "https://i.scdn.co/image/ab67616d0000b2731d13a9948aab982fabdf5209"
-          },
-          {
-            "id": 11,
-            "song": "Master of Puppets",
-            "artist": "Metallica",
-            "album": "Master of Puppets",
-            "likes": 968,
-            "releaseYear": 1986,
-            "genre": "Metal",
-            "image": "https://i.scdn.co/image/ab67616d0000b2736976009675621c80cafa1ff5"
-          },
-          {
-            "id": 12,
-            "song": "Runaround Sue",
-            "artist": "Dion",
-            "album": "Runaround Sue",
-            "likes": 452,
-            "releaseYear": 1961,
-            "genre": "Doo-Wop",
-            "image": "https://i.scdn.co/image/ab67616d0000b273860a3b044d1715635ad2bad7"
-          
-          },
-          {
-            "id": 13,
-            "song": "Purple Haze",
-            "artist": "The Jimi Hendrix Experience",
-            "album": "Are You Experienced?",
-            "likes": 802,
-            "releaseYear": 1967,
-            "genre": "Rock",
-            "image": "https://i.scdn.co/image/ab67616d0000b273c9adfbd773852e286faed040"
-          },
-          {
-            "id": 14,
-            "song": "Low",
-            "artist": "Flor-Rida",
-            "album": "Mall On Sunday",
-            "likes": 968,
-            "releaseYear": 2007,
-            "genre": "Crunk",
-            "image": "https://i.scdn.co/image/ab67616d0000b273f9bd7a6c772ac496015be3f8"
-          }
-    ]
+  "songs": [
+    {
+      "id": 0,
+      "song": "Losing Control",
+      "artist": "Odd Mob",
+      "album": "Losing Control",
+      "likes": 659,
+      "releaseYear": "2023",
+      "genre": "House",
+      "image": "https://i.scdn.co/image/ab67616d00001e027f716a9fa5490b70c634821c"
+    },
+    {
+      "id": 1,
+      "song": "React",
+      "artist": "Switch Disco",
+      "album": "React",
+      "likes": 238,
+      "releaseYear": "2022",
+      "genre": "House",
+      "image": "https://i1.sndcdn.com/artworks-q2HSfSyq5idF-0-t500x500.jpg"
+    },
+    {
+      "id": 2,
+      "song": "Atmosphere",
+      "artist": "Fisher",
+      "album": "Atmosphere",
+      "likes": 1024,
+      "releaseYear": "2023",
+      "genre": "House",
+      "image": "https://alltimeedm.com/wp-content/uploads/2023/08/atmosphere-cover-jpg.webp"
+    },
+    {
+      "id": 3,
+      "song": "Badders",
+      "artist": "Peekaboo",
+      "album": "Badders",
+      "likes": 659,
+      "releaseYear": "2023",
+      "genre": "Dubstep",
+      "image": "https://i.scdn.co/image/ab67616d0000b2731802f280768fd38dc14f9291"
+    },
+    {
+      "id": 4,
+      "song": "The Slab",
+      "artist": "Big City",
+      "album": "The Slab",
+      "likes": 896,
+      "releaseYear": "2021",
+      "genre": "Dubstep",
+      "image": "https://progarchy.files.wordpress.com/2023/07/bbt-ingenious-devices.jpg?w=300"
+    },
+    {
+      "id": 5,
+      "song": "Tomboy",
+      "artist": "Hyukoh",
+      "album": "23",
+      "likes": 695,
+      "releaseYear": 2017,
+      "genre": "Indie",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736b0b72f94905f2321564a20f"
+    },
+    {
+      "id": 6,
+      "song": "Who Do You Love",
+      "artist": "The Black Skirts",
+      "album": "TEAM BABY",
+      "likes": 485,
+      "releaseYear": 2017,
+      "genre": "Indie",
+      "image": "https://i.scdn.co/image/ab67616d0000b27310b3ebc65d2f65964cf461d8"
+    },
+    {
+      "id": 7,
+      "song": "Karma",
+      "artist": "Sarah Kinsley",
+      "album": "Karma",
+      "likes": 816,
+      "releaseYear": 2021,
+      "genre": "Pop",
+      "image": "https://i.scdn.co/image/ab67616d0000b273ba8797def1a9eec548ebfdbb"
+    },
+    {
+      "id": 8,
+      "song": "There Is a Light That Never Goes Out",
+      "artist": "The Smiths",
+      "album": "The Queen Is Dead",
+      "likes": 778,
+      "releaseYear": 1986,
+      "genre": "Indie",
+      "image": "https://i.scdn.co/image/ab67616d0000b2738abb33c7671ca773e148fef7"
+    },
+    {
+      "id": 9,
+      "song": "Restless",
+      "artist": "BIBI",
+      "album": "Restless",
+      "likes": 263,
+      "releaseYear": 2020,
+      "genre": "Pop",
+      "image": "https://i.scdn.co/image/ab67616d00001e02af13d05d63fc8199472511d3"
+    },
+    {
+      "id": 10,
+      "song": "American Idiot",
+      "artist": "Green Day",
+      "album": "American Idiot",
+      "likes": 284,
+      "releaseYear": 2004,
+      "genre": "Rock",
+      "image": "https://i.scdn.co/image/ab67616d0000b2731d13a9948aab982fabdf5209"
+    },
+    {
+      "id": 11,
+      "song": "Master of Puppets",
+      "artist": "Metallica",
+      "album": "Master of Puppets",
+      "likes": 968,
+      "releaseYear": 1986,
+      "genre": "Metal",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736976009675621c80cafa1ff5"
+    },
+    {
+      "id": 12,
+      "song": "Runaround Sue",
+      "artist": "Dion",
+      "album": "Runaround Sue",
+      "likes": 452,
+      "releaseYear": 1961,
+      "genre": "Doo-Wop",
+      "image": "https://i.scdn.co/image/ab67616d0000b273860a3b044d1715635ad2bad7"
+    },
+    {
+      "id": 13,
+      "song": "Purple Haze",
+      "artist": "The Jimi Hendrix Experience",
+      "album": "Are You Experienced?",
+      "likes": 802,
+      "releaseYear": 1967,
+      "genre": "Rock",
+      "image": "https://i.scdn.co/image/ab67616d0000b273c9adfbd773852e286faed040"
+    },
+    {
+      "id": 14,
+      "song": "Low",
+      "artist": "Flor-Rida",
+      "album": "Mall On Sunday",
+      "likes": 968,
+      "releaseYear": 2007,
+      "genre": "Crunk",
+      "image": "https://i.scdn.co/image/ab67616d0000b273f9bd7a6c772ac496015be3f8"
+    },
+    {
+      "id": 15,
+      "song": "Crazy",
+      "artist": "Gnarles Barkley",
+      "album": "St. Elsewhere",
+      "likes": 302,
+      "releaseYear": 2006,
+      "genre": "Pop",
+      "image": "https://i.scdn.co/image/ab67616d0000b27361a13426a99fd3500e2fff54"
+    },
+    {
+      "id": 16,
+      "song": "House of the Rising Sun",
+      "artist": "The Animals",
+      "album": "The Animals",
+      "likes": 264,
+      "releaseYear": 1964,
+      "genre": "Rock",
+      "image": "https://i.scdn.co/image/ab67616d0000b2733c534611bd3658006378a2d7"
+    },
+    {
+      "id": 17,
+      "song": "Hey Ya!",
+      "artist": "OutKast",
+      "album": "Speakerboxxx/The Love Below",
+      "likes": 402,
+      "releaseYear": 2003,
+      "genre": "Pop",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736a6387ab37f64034cdc7b367"
+    },
+    {
+      "id": 18,
+      "song": "Livin' on a Prayer",
+      "artist": "Bon Jovi",
+      "album": "Slippery When Wet",
+      "likes": 278,
+      "releaseYear": 1986,
+      "genre": "Rock",
+      "image": "https://i.scdn.co/image/ab67616d0000b2731336b31b6a1799f0de5807ac"
+    },
+    {
+      "id": 19,
+      "song": "Umbrella",
+      "artist": "Rihanna",
+      "album": "Good Girl Gone Bad",
+      "likes": 349,
+      "releaseYear": 2007,
+      "genre": "Pop",
+      "image": "https://i.scdn.co/image/ab67616d0000b273f9f27162ab1ed45b8d7a7e98"
+    },
+    {
+      "id": 20,
+      "song": "Poker Face",
+      "artist": "Lady Gaga",
+      "album": "The Fame",
+      "likes": 284,
+      "releaseYear": 2008,
+      "genre": "Pop",
+      "image": "https://i.scdn.co/image/ab67616d0000b2739ff8dea75219ec13530d97f1"
+    },
+    {
+      "id": 21,
+      "song": "Clint Eastwood",
+      "artist": "Gorillaz",
+      "album": "Gorillaz",
+      "likes": 365,
+      "releaseYear": 2001,
+      "genre": "Alternative",
+      "image": "https://i.scdn.co/image/ab67616d0000b273c73a7bb15f43bae86215934b"
+    },
+    {
+      "id": 22,
+      "song": "Hotling Bling",
+      "artist": "Drake",
+      "album": "Views",
+      "likes": 260,
+      "releaseYear": 2016,
+      "genre": "Pop",
+      "image": "https://i.scdn.co/image/ab67616d0000b27393d393bbc923a9e0e1ec77dd"
+    },
+    {
+      "id": 23,
+      "song": "Sweet Child O' Mine",
+      "artist": "Guns N' Roses",
+      "album": "Appetite for Destruction",
+      "likes": 288,
+      "releaseYear": 1987,
+      "genre": "Rock",
+      "image": "https://i.scdn.co/image/ab67616d0000b27368384dd85fd5e95831252f60"
+    },
+    {
+      "id": 24,
+      "song": "Born in the U.S.A.",
+      "artist": "Bruce Springsteen",
+      "album": "Born in the U.S.A.",
+      "likes": 135,
+      "releaseYear": 1984,
+      "genre": "Rock",
+      "image": "https://i.scdn.co/image/ab67616d0000b273a7865e686c36a4adda6c9978"
+    },
+    {
+      "id": 25,
+      "song": "Sweet Disposition",
+      "artist": "The Temper Trap",
+      "album": "Conditions",
+      "likes": 385,
+      "releaseYear": 2008,
+      "genre": "Alternative",
+      "image": "https://i.scdn.co/image/ab67616d0000b27357a0868419086b576553c9f4"
+    },
+    {
+      "id": 26,
+      "song": "The Flower Garden ",
+      "artist": "Joe Hisaishi",
+      "album": "Howl's Moving Castle",
+      "likes": 590,
+      "releaseYear": 2004,
+      "genre": "Original Score",
+      "image": "https://i.scdn.co/image/ab67616d0000b27362c1f3370811c52ae2d26d24"
+    },
+    {
+      "id": 27,
+      "song": "Apocalypse",
+      "artist": "Cigarettes After Sex",
+      "album": "Cigarettes After Sex",
+      "likes": 156,
+      "releaseYear": 2017,
+      "genre": "Alternative",
+      "image": "https://i.scdn.co/image/ab67616d0000b2736b701428ed4c6e053902174a"
+    },
+    {
+      "id": 28,
+      "song": "Tree",
+      "artist": "Car, The Garden",
+      "album": "Tree",
+      "likes": 346,
+      "releaseYear": 2019,
+      "genre": "K-Pop",
+      "image": "https://i.scdn.co/image/ab67616d0000b27364eea0085a043b52217179cb"
+    },
+    {
+      "id": 29,
+      "song": "In the Bed",
+      "artist": "Sungwoojunga",
+      "album": "In the Bed",
+      "likes": 864,
+      "releaseYear": 2021,
+      "genre": "K-Pop",
+      "image": "https://cdns-images.dzcdn.net/images/cover/859cd1408eea9322684e57f501e83cdd/264x264.jpg"
+    },
+    {
+      "id": 30,
+      "song": "Myth",
+      "artist": "Beach House",
+      "album": "Bloom",
+      "likes": 1897,
+      "releaseYear": 2012,
+      "genre": "Alternative",
+      "image": "https://i1.sndcdn.com/artworks-000039451708-oekrh8-t500x500.jpg"
+    },
+    {
+      "id": 31,
+      "song": "All I Want",
+      "artist": "Kodaline",
+      "album": "In a Perfect World",
+      "likes": 968,
+      "releaseYear": 2012,
+      "genre": "Alternative",
+      "image": "https://i.scdn.co/image/ab67616d0000b2733e42854096da9a3b1ca901c9"
+    },
+    {
+      "id": 32,
+      "song": "Pan's Labyrinth Lullaby",
+      "artist": "Javier Navarrete",
+      "album": "Pan's Labyrinth",
+      "likes": 36,
+      "releaseYear": 2006,
+      "genre": "Original Score",
+      "image": "https://i.scdn.co/image/ab67616d0000b273efc9678687f602f6102ce520"
+    },
+    {
+      "id": 33,
+      "song": "Lover",
+      "artist": "Taylor Swift",
+      "album": "Lover",
+      "likes": 279,
+      "releaseYear": 2019,
+      "genre": "Pop",
+      "image": "https://i.scdn.co/image/ab67616d0000b273e787cffec20aa2a396a61647"
+    },
+    {
+      "id": 34,
+      "song": "Vampire",
+      "artist": "Oliva Rodrigo",
+      "album": "GUTS",
+      "likes": 65,
+      "releaseYear": 2023,
+      "genre": "Pop",
+      "image": "https://i.scdn.co/image/ab67616d0000b273e85259a1cae29a8d91f2093d"
+    },
+    {
+      "song": "Fluorescent Adolescent",
+      "artist": "Arctic Monkeys",
+      "album": "Favourite Worst Nightmare",
+      "likes": 0,
+      "releaseYear": "2007",
+      "genre": "Alternative",
+      "image": "https://i.scdn.co/image/ab67616d0000b273b1f8da74f225fa1225cdface",
+      "id": 35
+    },
+    {
+      "song": "Hello Goodbye",
+      "artist": "the beatles",
+      "album": "idk",
+      "likes": 0,
+      "releaseYear": "2015",
+      "genre": "rick",
+      "image": "here",
+      "id": 36
+    },
+    {
+      "song": "Hello Goodbye",
+      "artist": "the beatles",
+      "album": "idk",
+      "likes": 0,
+      "releaseYear": "2016",
+      "genre": "rick",
+      "image": "here",
+      "id": 37
+    },
+    {
+      "song": "Hello Goodbye",
+      "artist": "the beatles",
+      "album": "idk",
+      "likes": 0,
+      "releaseYear": "1890",
+      "genre": "rick",
+      "image": "here",
+      "id": 38
+    }
+  ]
 }

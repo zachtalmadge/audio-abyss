@@ -18,7 +18,7 @@
         <h1 class="display-4">Audio Abyss</h1>
         <p class="lead">Finding new music is hard. We're here to help.</p>
         <!-- button to fetch songs-->
-        <button class="btn btn-primary">Refresh new songs</button>
+        <button id="refresh-button" class="btn btn-primary">Refresh new songs</button>
         <!-- button for form modal-->
         <button class="btn btn-outline-warning" data-toggle="modal" data-target="#formModal">Add a song</button>
       </div>
@@ -105,6 +105,10 @@
               <div class="form-group">
                 <label>Album</label>
                 <input type="text" class="form-control" name="album" required>
+              </div> <!-- form control -->
+              <div class="form-group">
+                <label>Album Image Url</label>
+                <input type="text" class="form-control" name="album-img-url" required>
               </div> <!-- form control -->
               <div class="form-group">
                 <label>Genre</label>
