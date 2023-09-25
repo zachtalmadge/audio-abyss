@@ -75,10 +75,11 @@ const addSongEventListener = () => {
     let albumImgUrl = event.target['album-img-url'].value
     let genreInput = event.target.genre.value
     let releaseYearInput = event.target['release-year'].value
+    //function to open modal with new song info
 
-    //fetch request
+    //fetch to do a Post request
     fetch(URL, {
-        method: "PATCH",
+        method: "POST",
         headers: {
           "Content-Type": "application/json",
           "Accept": "application/json"
@@ -96,7 +97,6 @@ const addSongEventListener = () => {
       .then(resp => resp.json())
       .then(newSongObj => console.log(newSongObj))
       .catch(error => alert(error))
-    //function to do a patch request
     addSongForm.reset();
   })
 }
