@@ -24,3 +24,6 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+#genreDropdown option:first-child {
+    color: red;
+}
