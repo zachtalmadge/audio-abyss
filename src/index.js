@@ -3,6 +3,7 @@ const URL = "http://localhost:3000/songs"
 const songDisplayCards = document.querySelector('#card-container')
 const addSongForm = document.querySelector('#submit-new-song')
 const refreshButton = document.querySelector('#refresh-button')
+const dropdown = document.querySelector('#genreDropdown')
 
 
 // song detail modal nodes
@@ -28,13 +29,13 @@ const renderSongCard = (song) => {
     divBody.className = "card-body"
 
   let h5 = document.createElement('h5')
-    h5.className = "card-title"
+    h5.className = "card-title d-inline-block"
     h5.textContent = song.song
   let p = document.createElement('p')
     p.className = "card-text"
   p.innerHTML =
       `Artist: ${ song.artist } <br>
-      Album: ${song.album} <br>`
+      <span class="album-text d-inline-block">Album: ${song.album} <br>`
 
     let heartButton = document.createElement('button')
     heartButton.className = "btn btn-outline-danger"
@@ -58,6 +59,16 @@ const renderSongCard = (song) => {
     })
     clickHeart(heartButton, song);
 }
+
+//function to add event listener on details button
+const detailEventListener = () => {
+  document.querySelectorAll('.details').forEach((element) => {
+    element.addEventListener('click', (event) => {
+      displaySongDetails(event.target.dataset.name)
+    })
+  })
+}
+
 function displayRandomSongs(songsArray) {
     // Randomly select 6 songs
     const selectedSongs = [];
@@ -71,11 +82,7 @@ function displayRandomSongs(songsArray) {
     }
     selectedSongs.forEach(song => renderSongCard(song))
     //attach event listener
-    document.querySelectorAll('.details').forEach(node => {
-      node.addEventListener('click', (e) => {
-        displaySongDetails(e.target.dataset.name)
-      })
-    })
+    detailEventListener();
 }
 
 const fetchSongs = () => {
@@ -93,11 +100,18 @@ const clearElement = (element) => {
     child = element.lastElementChild
   }
 }
+
+//reset the dropdown selector
+const resetDropdown = () => {
+  dropdown.disabled = false
+  dropdown.value = dropdown.options[0].value
+}
 //refresh button event listener
   const refreshSongs = () => {
     refreshButton.addEventListener('click', () => {
       clearElement(songDisplayCards)
       fetchSongs()
+      resetDropdown();
     })
   }
 
@@ -187,6 +201,28 @@ const clickHeart = (element, songObj) => {
   })
 }
 
+//function to filter by genre
+const filterByGenre = (genre) => {
+  fetch(URL)
+  .then(resp => resp.json())
+  .then(songArray => {
+    let filteredArray = songArray.filter((songObj) => {
+    return songObj.genre === genre
+  })
+  clearElement(songDisplayCards)
+  filteredArray.forEach((songObj) => renderSongCard(songObj))
+  detailEventListener();
+  })
+  .catch(error => alert(error))
+}
+
+//dropdown event listener function
+const selectDropdown = () => {
+  dropdown.addEventListener('change', (event) => {
+    let genreValue = event.target.value
+    filterByGenre(genreValue)
+  })
+}
 //! ZACH'S CODE
 
 // add functionality to display song details
@@ -211,3 +247,4 @@ async function displaySongDetails(name){
 fetchSongs()
 refreshSongs()
 addSongEventListener();
+selectDropdown();
