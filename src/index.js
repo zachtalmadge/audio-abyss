@@ -3,6 +3,7 @@ const URL = "http://localhost:3000/songs"
 const songDisplayCards = document.querySelector('#card-container')
 const addSongForm = document.querySelector('#submit-new-song')
 const refreshButton = document.querySelector('#refresh-button')
+const likeButton = document.querySelectorAll('.btn-outline-danger')
 // song detail modal nodes
 const songDetailName = document.querySelector('#songDetailName')
 const songDetailArtist = document.querySelector('#songDetailArtist')
@@ -12,13 +13,6 @@ const songDetailGenre = document.querySelector('#songDetailGenre')
 const songDetailAlbumArt = document.querySelector('#songDetailAlbumArt')
 
 //! WESLEY'S CODE
-const fetchSongs = () => {
-    fetch(URL)
-    .then(response => response.json())
-    .then(songsArray => displayRandomSongs(songsArray))
-    .catch(error => alert(error))
-}
-
 const renderSongCard = (song) => {
 
     const colContent = `
@@ -37,10 +31,8 @@ const renderSongCard = (song) => {
       </div>
     </div>
     `
-
     songDisplayCards.innerHTML += colContent
 }
-
 function displayRandomSongs(songsArray) {
     // Randomly select 6 songs
     const selectedSongs = [];
@@ -61,6 +53,12 @@ function displayRandomSongs(songsArray) {
     })
 }
 
+const fetchSongs = () => {
+    fetch(URL)
+    .then(response => response.json())
+    .then(songsArray => displayRandomSongs(songsArray))
+    .catch(error => alert(error))
+}
 
 //remove all children of element
 const clearElement = (element) => {
@@ -78,10 +76,6 @@ const clearElement = (element) => {
     })
   }
 
-//Call functions
-fetchSongs()
-refreshSongs()
-
 //! TIANA'S CODE
 
 const addSongEventListener = () => {
@@ -94,7 +88,6 @@ const addSongEventListener = () => {
     let albumImgUrl = event.target['album-img-url'].value
     let genreInput = event.target.genre.value
     let releaseYearInput = event.target['release-year'].value
-    //function to open modal with new song info
 
     //fetch to do a Post request
     fetch(URL, {
@@ -119,13 +112,19 @@ const addSongEventListener = () => {
     addSongForm.reset();
   })
 }
-//Call functions
-addSongEventListener();
+
+//button to increase like
+const changeLikeButton = () => {
+  likeButton.forEach((button) => {
+    button.addEventListener('click', () => {
+      console.log('clicked')
+    })
+  })
+}
 
 //! ZACH'S CODE
 
 // add functionality to display song details
-
 async function displaySongDetails(name){
     // attach song details
     let response = await fetch(URL)
@@ -140,7 +139,7 @@ async function displaySongDetails(name){
     songDetailReleaseYear.textContent = `Release year: ${song.releaseYear}`
     songDetailGenre.textContent = `Genre: ${song.genre}`
     songDetailAlbumArt.src = song.image
- 
+
 }
 
 // like button functionality
@@ -148,3 +147,9 @@ async function displaySongDetails(name){
 // color changing thing
 
 // hover effect
+
+//Calling Functions
+fetchSongs()
+refreshSongs()
+addSongEventListener();
+changeLikeButton();
