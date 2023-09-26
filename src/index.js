@@ -59,6 +59,16 @@ const renderSongCard = (song) => {
     })
     clickHeart(heartButton, song);
 }
+
+//function to add event listener on details button
+const detailEventListener = () => {
+  document.querySelectorAll('.details').forEach((element) => {
+    element.addEventListener('click', (event) => {
+      displaySongDetails(event.target.dataset.name)
+    })
+  })
+}
+
 function displayRandomSongs(songsArray) {
     // Randomly select 6 songs
     const selectedSongs = [];
@@ -72,11 +82,7 @@ function displayRandomSongs(songsArray) {
     }
     selectedSongs.forEach(song => renderSongCard(song))
     //attach event listener
-    document.querySelectorAll('.details').forEach(node => {
-      node.addEventListener('click', (e) => {
-        displaySongDetails(e.target.dataset.name)
-      })
-    })
+    detailEventListener();
 }
 
 const fetchSongs = () => {
