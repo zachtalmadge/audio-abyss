@@ -15,24 +15,57 @@ const songDetailAlbumArt = document.querySelector('#songDetailAlbumArt')
 
 //! WESLEY'S CODE
 const renderSongCard = (song) => {
+  let div1 = document.createElement('div')
+    div1.className = "col-md-4"
+  let div2 = document.createElement('div')
+    div2.className = "card"
 
-    const colContent = `
-    <div class="col-md-4">
-      <div class="card">
-        <img class="card-img-top" src="${song.image}" alt="${song.song}">
-        <div class="card-body">
-          <h5 class="card-title">${song.song}</h5>
-          <p class="card-text">
-          Artist: ${song.artist} <br>
-          Album: ${song.album} <br>
-          </p>
-          <button data-name="${song.song}" class="btn btn-primary details" data-toggle="modal" data-target="#songDetailModal">Details</button>
-          <button class="btn btn-outline-danger"><i class="far fa-heart"></i></button>
-        </div>
-      </div>
-    </div>
-    `
-    songDisplayCards.innerHTML += colContent
+  let img = document.createElement('img')
+    img.className = "card-img-top"
+    img.src = song.image
+    img.alt = song.song
+  let divBody = document.createElement('div')
+    divBody.className = "card-body"
+
+  let h5 = document.createElement('h5')
+    h5.className = "card-title"
+    h5.textContent = song.song
+  let p = document.createElement('p')
+    p.className = "card-text"
+  p.innerHTML =
+      `Artist: ${ song.artist } <br>
+      Album: ${song.album} <br>`
+
+    let heartButton = document.createElement('button')
+    heartButton.className = "btn btn-outline-danger"
+      let i = document.createElement('i')
+      i.className = "far fa-heart"
+      heartButton.appendChild(i)
+
+    divBody.append(h5, p)
+    divBody.innerHTML += `<button data-name="${song.song}" class="btn btn-primary details" data-toggle="modal" data-target="#songDetailModal">Details</button>`
+    divBody.append(heartButton)
+
+    div2.append(img, divBody)
+    div1.append(div2)
+    songDisplayCards.append(div1)
+    // const colContent = `
+    // <div class="col-md-4">
+    //   <div class="card">
+    //     <img class="card-img-top" src="${song.image}" alt="${song.song}">
+    //     <div class="card-body">
+    //       <h5 class="card-title">${song.song}</h5>
+    //       <p class="card-text">
+    //       Artist: ${song.artist} <br>
+    //       Album: ${song.album} <br>
+    //       </p>
+    //       <button data-name="${song.song}" class="btn btn-primary details" data-toggle="modal" data-target="#songDetailModal">Details</button>
+    //       <button class="btn btn-outline-danger"><i class="far fa-heart"></i></button>
+    //     </div>
+    //   </div>
+    // </div>
+    // `
+    // songDisplayCards.innerHTML += colContent
 }
 function displayRandomSongs(songsArray) {
     // Randomly select 6 songs
@@ -122,8 +155,9 @@ const clickHeart = () => {
     const heartButton = event.target.closest('.btn.btn-outline-danger');
 
     if (heartButton) {
-      heartButton.classList.toggle('btn-danger')
       heartButton.classList.toggle('btn-outline-danger')
+      heartButton.classList.toggle('btn-danger')
+
     }
   });
 };
