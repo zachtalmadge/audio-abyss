@@ -149,26 +149,23 @@ const addSongEventListener = () => {
   })
 }
 
-//clickHeart function using element targeting
-const clickHeart = (element, songObj) => {
-  element.addEventListener('click', () => {
-    console.log(songObj)
-    element.className === "btn btn-outline-danger" ? element.className = "btn btn-danger": element.className = "btn btn-outline-danger"
-
-    if (element.className === "btn btn-danger") {
+//patch request function
+const patchRequest = (operatorString, songObj) => {
+  switch (operatorString) {
+    case '+':
       fetch(`http://localhost:3000/songs/${songObj.id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
           "Accept": "application/json"
         },
-        body: JSON.stringify({likes : songObj.likes += 1})
+        body: JSON.stringify({ likes: songObj.likes += 1 })
       })
-      .then(resp => resp.json())
-      .then(likeUpdate => console.log(likeUpdate))
-      .catch(error => alert(error))
-    }
-    else {
+        .then(resp => resp.json())
+        .then(likeUpdate => console.log(likeUpdate))
+        .catch(error => alert(error))
+        break;
+    case '-':
       fetch(`http://localhost:3000/songs/${songObj.id}`, {
         method: "PATCH",
         headers: {
@@ -180,6 +177,23 @@ const clickHeart = (element, songObj) => {
         .then(resp => resp.json())
         .then(likeUpdate => console.log(likeUpdate))
         .catch(error => alert(error))
+        break;
+      default:
+        console.log('Add appropriate math expression')
+  }
+}
+
+//clickHeart function using element targeting
+const clickHeart = (element, songObj) => {
+  element.addEventListener('click', () => {
+    console.log(songObj)
+    element.className === "btn btn-outline-danger" ? element.className = "btn btn-danger": element.className = "btn btn-outline-danger"
+
+    if (element.className === "btn btn-danger") {
+      patchRequest('+', songObj)
+    }
+    else {
+      patchRequest('-', songObj)
     }
   })
 }
