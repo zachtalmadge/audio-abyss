@@ -204,6 +204,7 @@ const filterByGenre = (genre) => {
   })
   clearElement(songDisplayCards)
   filteredArray.forEach((songObj) => renderSongCard(songObj))
+  detailEventListener();
   })
   .catch(error => alert(error))
 }
