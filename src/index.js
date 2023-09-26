@@ -50,7 +50,7 @@ const renderSongCard = (song) => {
     div1.append(div2)
     songDisplayCards.append(div1)
 
-    clickHeart(heartButton);
+    clickHeart(heartButton, song);
     // const colContent = `
     // <div class="col-md-4">
     //   <div class="card">
@@ -150,9 +150,37 @@ const addSongEventListener = () => {
 }
 
 //clickHeart function using element targeting
-const clickHeart = (element) => {
+const clickHeart = (element, songObj) => {
   element.addEventListener('click', () => {
+    console.log(songObj)
     element.className === "btn btn-outline-danger" ? element.className = "btn btn-danger": element.className = "btn btn-outline-danger"
+
+    if (element.className === "btn btn-danger") {
+      fetch(`http://localhost:3000/songs/${songObj.id}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({likes : songObj.likes += 1})
+      })
+      .then(resp => resp.json())
+      .then(likeUpdate => console.log(likeUpdate))
+      .catch(error => alert(error))
+    }
+    else {
+      fetch(`http://localhost:3000/songs/${songObj.id}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({ likes: songObj.likes - 1 })
+      })
+        .then(resp => resp.json())
+        .then(likeUpdate => console.log(likeUpdate))
+        .catch(error => alert(error))
+    }
   })
 }
 
