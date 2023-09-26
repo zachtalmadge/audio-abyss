@@ -10,3 +10,17 @@
 .btn-primary {
     /* padding: 0 10px 0 0 */
 }
+
+.album-text {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-title {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

@@ -28,13 +28,13 @@ const renderSongCard = (song) => {
     divBody.className = "card-body"
 
   let h5 = document.createElement('h5')
-    h5.className = "card-title"
+    h5.className = "card-title d-inline-block"
     h5.textContent = song.song
   let p = document.createElement('p')
     p.className = "card-text"
   p.innerHTML =
       `Artist: ${ song.artist } <br>
-      Album: ${song.album} <br>`
+      <span class="album-text d-inline-block">Album: ${song.album} <br>`
 
     let heartButton = document.createElement('button')
     heartButton.className = "btn btn-outline-danger"
