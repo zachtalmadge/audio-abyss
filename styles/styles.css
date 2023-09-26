@@ -24,6 +24,22 @@
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-#genreDropdown option:first-child {
-    color: red;
+
+#genreDropdown {
+
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: 400;
+            color: #ffffff;
+            text-align: center;
+            vertical-align: middle;
+            user-select: none;
+            border: 1px solid #ffffff54;
+            padding: 0.375rem 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: 0.25rem;
+            background-color: #ffffff54;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
 }

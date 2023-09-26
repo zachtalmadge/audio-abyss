@@ -3,6 +3,7 @@ const URL = "http://localhost:3000/songs"
 const songDisplayCards = document.querySelector('#card-container')
 const addSongForm = document.querySelector('#submit-new-song')
 const refreshButton = document.querySelector('#refresh-button')
+const dropdown = document.querySelector('#genreDropdown')
 
 
 // song detail modal nodes
@@ -187,6 +188,27 @@ const clickHeart = (element, songObj) => {
   })
 }
 
+//function to filter by genre
+const filterByGenre = (genre) => {
+  fetch(URL)
+  .then(resp => resp.json())
+  .then(songArray => {
+    let filteredArray = songArray.filter((songObj) => {
+    return songObj.genre === genre
+  })
+  clearElement(songDisplayCards)
+  filteredArray.forEach((songObj) => renderSongCard(songObj))
+  })
+  .catch(error => alert(error))
+}
+
+//dropdown event listener function
+const selectDropdown = () => {
+  dropdown.addEventListener('change', (event) => {
+    let genreValue = event.target.value
+    filterByGenre(genreValue)
+  })
+}
 //! ZACH'S CODE
 
 // add functionality to display song details
@@ -211,3 +233,4 @@ async function displaySongDetails(name){
 fetchSongs()
 refreshSongs()
 addSongEventListener();
+selectDropdown();
