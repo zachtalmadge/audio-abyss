@@ -1,0 +1,4 @@
+.card-glow {
+    box-shadow: 0 0 15px rgb(0,123,255);
+    transition: box-shadow 0.3s ease-in-out;
+}

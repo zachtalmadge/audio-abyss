@@ -49,7 +49,13 @@ const renderSongCard = (song) => {
     div2.append(img, divBody)
     div1.append(div2)
     songDisplayCards.append(div1)
-
+    // add mouseover event listener
+    div2.addEventListener('mouseover', () => {
+      div2.classList.add('card-glow')
+    })
+    div2.addEventListener('mouseout', () => {
+      div2.classList.remove('card-glow')
+    })
     clickHeart(heartButton, song);
 }
 function displayRandomSongs(songsArray) {
