@@ -51,23 +51,6 @@ const renderSongCard = (song) => {
     songDisplayCards.append(div1)
 
     clickHeart(heartButton, song);
-    // const colContent = `
-    // <div class="col-md-4">
-    //   <div class="card">
-    //     <img class="card-img-top" src="${song.image}" alt="${song.song}">
-    //     <div class="card-body">
-    //       <h5 class="card-title">${song.song}</h5>
-    //       <p class="card-text">
-    //       Artist: ${song.artist} <br>
-    //       Album: ${song.album} <br>
-    //       </p>
-    //       <button data-name="${song.song}" class="btn btn-primary details" data-toggle="modal" data-target="#songDetailModal">Details</button>
-    //       <button class="btn btn-outline-danger"><i class="far fa-heart"></i></button>
-    //     </div>
-    //   </div>
-    // </div>
-    // `
-    // songDisplayCards.innerHTML += colContent
 }
 function displayRandomSongs(songsArray) {
     // Randomly select 6 songs
@@ -198,22 +181,6 @@ const clickHeart = (element, songObj) => {
   })
 }
 
-//button to increase like
-// const clickHeart = () => {
-//   const heartParentElement = document.querySelector('#card-container');
-
-//   heartParentElement.addEventListener('click', (event) => {
-//     const heartButton = event.target.closest('.btn.btn-outline-danger');
-
-//     if (heartButton) {
-//       heartButton.classList.toggle('btn-outline-danger')
-//       heartButton.classList.toggle('btn-danger')
-
-//     }
-//   });
-// };
-
-
 //! ZACH'S CODE
 
 // add functionality to display song details
@@ -233,12 +200,6 @@ async function displaySongDetails(name){
     songDetailAlbumArt.src = song.image
 
 }
-
-// like button functionality
-
-// color changing thing
-
-// hover effect
 
 //Calling Functions
 fetchSongs()
