@@ -49,6 +49,8 @@ const renderSongCard = (song) => {
     div2.append(img, divBody)
     div1.append(div2)
     songDisplayCards.append(div1)
+
+    clickHeart(heartButton);
     // const colContent = `
     // <div class="col-md-4">
     //   <div class="card">
@@ -147,20 +149,27 @@ const addSongEventListener = () => {
   })
 }
 
+//clickHeart function using element targeting
+const clickHeart = (element) => {
+  element.addEventListener('click', () => {
+    element.className === "btn btn-outline-danger" ? element.className = "btn btn-danger": element.className = "btn btn-outline-danger"
+  })
+}
+
 //button to increase like
-const clickHeart = () => {
-  const heartParentElement = document.querySelector('#card-container');
+// const clickHeart = () => {
+//   const heartParentElement = document.querySelector('#card-container');
 
-  heartParentElement.addEventListener('click', (event) => {
-    const heartButton = event.target.closest('.btn.btn-outline-danger');
+//   heartParentElement.addEventListener('click', (event) => {
+//     const heartButton = event.target.closest('.btn.btn-outline-danger');
 
-    if (heartButton) {
-      heartButton.classList.toggle('btn-outline-danger')
-      heartButton.classList.toggle('btn-danger')
+//     if (heartButton) {
+//       heartButton.classList.toggle('btn-outline-danger')
+//       heartButton.classList.toggle('btn-danger')
 
-    }
-  });
-};
+//     }
+//   });
+// };
 
 
 //! ZACH'S CODE
@@ -193,4 +202,3 @@ async function displaySongDetails(name){
 fetchSongs()
 refreshSongs()
 addSongEventListener();
-clickHeart()
