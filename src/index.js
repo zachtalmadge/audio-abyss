@@ -100,11 +100,18 @@ const clearElement = (element) => {
     child = element.lastElementChild
   }
 }
+
+//reset the dropdown selector
+const resetDropdown = () => {
+  dropdown.disabled = false
+  dropdown.value = dropdown.options[0].value
+}
 //refresh button event listener
   const refreshSongs = () => {
     refreshButton.addEventListener('click', () => {
       clearElement(songDisplayCards)
       fetchSongs()
+      resetDropdown();
     })
   }
 
