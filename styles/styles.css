@@ -2,3 +2,11 @@
     box-shadow: 0 0 15px rgb(0,123,255);
     transition: box-shadow 0.3s ease-in-out;
 }
+
+.col-md-4 {
+    padding: 10px 10px 10px 10px
+}
+
+.btn-primary {
+    /* padding: 0 10px 0 0 */
+}
