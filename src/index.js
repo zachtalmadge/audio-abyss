@@ -3,7 +3,8 @@ const URL = "http://localhost:3000/songs"
 const songDisplayCards = document.querySelector('#card-container')
 const addSongForm = document.querySelector('#submit-new-song')
 const refreshButton = document.querySelector('#refresh-button')
-const likeButton = document.querySelectorAll('.btn-outline-danger')
+
+
 // song detail modal nodes
 const songDetailName = document.querySelector('#songDetailName')
 const songDetailArtist = document.querySelector('#songDetailArtist')
@@ -114,13 +115,19 @@ const addSongEventListener = () => {
 }
 
 //button to increase like
-const changeLikeButton = () => {
-  likeButton.forEach((button) => {
-    button.addEventListener('click', () => {
-      console.log('clicked')
-    })
-  })
-}
+const clickHeart = () => {
+  const heartParentElement = document.querySelector('#card-container');
+
+  heartParentElement.addEventListener('click', (event) => {
+    const heartButton = event.target.closest('.btn.btn-outline-danger');
+
+    if (heartButton) {
+      heartButton.classList.toggle('btn-danger')
+      heartButton.classList.toggle('btn-outline-danger')
+    }
+  });
+};
+
 
 //! ZACH'S CODE
 
@@ -152,4 +159,4 @@ async function displaySongDetails(name){
 fetchSongs()
 refreshSongs()
 addSongEventListener();
-changeLikeButton();
+clickHeart()
