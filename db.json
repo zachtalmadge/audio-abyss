@@ -75,7 +75,7 @@
       "song": "Karma",
       "artist": "Sarah Kinsley",
       "album": "Karma",
-      "likes": 816,
+      "likes": 820,
       "releaseYear": 2021,
       "genre": "Pop",
       "image": "https://i.scdn.co/image/ab67616d0000b273ba8797def1a9eec548ebfdbb"
@@ -95,7 +95,7 @@
       "song": "Restless",
       "artist": "BIBI",
       "album": "Restless",
-      "likes": 263,
+      "likes": 265,
       "releaseYear": 2020,
       "genre": "Pop",
       "image": "https://i.scdn.co/image/ab67616d00001e02af13d05d63fc8199472511d3"
@@ -155,7 +155,7 @@
       "song": "Crazy",
       "artist": "Gnarles Barkley",
       "album": "St. Elsewhere",
-      "likes": 302,
+      "likes": 304,
       "releaseYear": 2006,
       "genre": "Pop",
       "image": "https://i.scdn.co/image/ab67616d0000b27361a13426a99fd3500e2fff54"
@@ -265,7 +265,7 @@
       "song": "The Flower Garden ",
       "artist": "Joe Hisaishi",
       "album": "Howl's Moving Castle",
-      "likes": 590,
+      "likes": 591,
       "releaseYear": 2004,
       "genre": "Original Score",
       "image": "https://i.scdn.co/image/ab67616d0000b27362c1f3370811c52ae2d26d24"
@@ -355,7 +355,7 @@
       "song": "Fluorescent Adolescent",
       "artist": "Arctic Monkeys",
       "album": "Favourite Worst Nightmare",
-      "likes": 0,
+      "likes": 1,
       "releaseYear": "2007",
       "genre": "Alternative",
       "image": "https://i.scdn.co/image/ab67616d0000b273b1f8da74f225fa1225cdface"
