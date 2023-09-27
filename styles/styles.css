@@ -1,7 +1,13 @@
-.card-glow {
-    box-shadow: 0 0 15px rgb(0,123,255);
+/* //hover card effects */
+.card-glow-house {
+    box-shadow: 0 0 75px teal;
     transition: box-shadow 0.3s ease-in-out;
 }
+
+/* .card-glow {
+    box-shadow: 0 0 15px rgb(0,123,255);
+    transition: box-shadow 0.3s ease-in-out;
+} */
 
 .col-md-4 {
     padding: 10px 10px 10px 10px
