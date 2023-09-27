@@ -30,7 +30,7 @@ body {
     transition: box-shadow 0.3s ease-in-out;
 }
 .card-glow-rock {
-    box-shadow: 0 0 75px rgb(7, 7, 162);
+    box-shadow: 0 0 75px rgb(53, 53, 222);
     transition: box-shadow 0.3s ease-in-out;
 }
 .card-glow-crunk {
@@ -38,7 +38,7 @@ body {
     transition: box-shadow 0.3s ease-in-out;
 }
 .card-glow-alternative {
-    box-shadow: 0 0 75px rgb(87, 2, 87);
+    box-shadow: 0 0 75px rgb(181, 3, 181);
     transition: box-shadow 0.3s ease-in-out;
 }
 .card-glow-originalscore {
@@ -95,18 +95,17 @@ div.jumbotron {
 }
 div.card-body {
     background-color: black;
-    text-emphasis-color: white;
-    color: #ffffff;
+    color: whitesmoke;
 }
 #refresh-button {
     background-color: #7b66fb;
     border-color: #7b66fb;
-    color: white;
+    color: whitesmoke;
 }
 .btn-primary {
     background-color: #9f045c;
     border-color: #9f045c;
-    color: white;
+    color: whitesmoke;
 }
 .btn-outline-primary {
     color: #fa6cae;
@@ -127,7 +126,7 @@ div.card-body {
 .btn-outline-primary:active,
 .btn-outline-primary.active,
 .open>.dropdown-toggle.btn-outline-primary {
-    color: #white;
+    color: whitesmoke;
     background-color: #fa6cae;
     border-color: #fa6cae;
 }
@@ -136,9 +135,35 @@ div.card-body {
 .btn-primary:active,
 .btn-primary.active,
 .open>.dropdown-toggle.btn-primary {
-    color: #fff;
+    color: whitesmoke;
     background-color: transparent;
     border-color: #9f045c
+}
+#genreDropdown {
+    background-color: #9f045c;
+    border-color: #9f045c;
+    color:whitesmoke
+}
+#genreDropdown:hover,
+#genreDropdown:focus,
+#genreDropdown:active,
+#genreDropdown.active,
+.open>.dropdown-toggle#genreDropdown {
+    color: whitesmoke;
+    background-color: transparent;
+    border-color: whitesmoke
+}
+.modal-body {
+    background-color: black;
+    color: whitesmoke;
+}
+.modal-header {
+    background-color: black;
+    color: whitesmoke;
+}
+.form-control {
+    background-color: #9f045c;
+    color: whitesmoke;
 }
 
 /* .colorChange {

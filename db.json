@@ -361,14 +361,284 @@
       "image": "https://i.scdn.co/image/ab67616d0000b273b1f8da74f225fa1225cdface"
     },
     {
+      "id": 36,
       "song": "Hey, Soul Sister",
       "artist": "Train",
       "album": "Train",
       "likes": 0,
       "releaseYear": "2018",
       "genre": "Pop",
-      "image": "https://i.scdn.co/image/ab67616d0000b2736ff8bc258e3ebc835ffe14ca",
-      "id": 36
-    }
+      "image": "https://i.scdn.co/image/ab67616d0000b2736ff8bc258e3ebc835ffe14ca"
+    },
+    {
+      "id": 37,
+      "song": "Get Low",
+      "artist": "Lil Jon & The East Side Boyz",
+      "album": "Kings of Crunk",
+      "likes": 1354,
+      "releaseYear": 2002,
+      "genre": "Crunk",
+      "image": "https://i.scdn.co/image/ab67616d0000b2733ba0e7112f965bfda72b1c5b"
+      },
+      {
+      "id": 38,
+      "song": "Yeah!",
+      "artist": "Usher ft. Lil Jon, Ludacris",
+      "album": "Confessions",
+      "likes": 1876,
+      "releaseYear": 2004,
+      "genre": "Crunk",
+      "image": "https://i.scdn.co/image/ab67616d0000b273365b3fb800c19f7ff72602da"
+      },
+      {
+      "id": 39,
+      "song": "Salt Shaker",
+      "artist": "Ying Yang Twins",
+      "album": "Me & My Brother",
+      "likes": 1123,
+      "releaseYear": 2003,
+      "genre": "Crunk",
+      "image": "https://i.scdn.co/image/ab67616d0000b2731f52a7e9b573959c8e430974"
+      },
+      {
+      "id": 40,
+      "song": "Snap Yo Fingers",
+      "artist": "Lil Jon ft. E-40, Sean Paul",
+      "album": "Crunk Juice",
+      "likes": 982,
+      "releaseYear": 2006,
+      "genre": "Crunk",
+      "image": "https://i.scdn.co/image/ab67616d0000b2734ab521cf16202a5bc5f72cfe"
+      },
+      {
+      "id": 41,
+      "song": "Freek-a-Leek",
+      "artist": "Petey Pablo",
+      "album": "Still Writing in My Diary: 2nd Entry",
+      "likes": 745,
+      "releaseYear": 2004,
+      "genre": "Crunk",
+      "image": "https://i.scdn.co/image/ab67616d0000b273abba73f5c24c0066908196e1"
+      },
+      {
+      "id": 42,
+      "song": "Lean Back",
+      "artist": "Terror Squad",
+      "album": "True Story",
+      "likes": 876,
+      "releaseYear": 2004,
+      "genre": "Crunk",
+      "image": "https://i.scdn.co/image/ab67616d0000b2732e49046fecfba5be6bc7b92a"
+      },
+      {
+      "id": 43,
+      "song": "Laffy Taffy",
+      "artist": "D4L",
+      "album": "Down for Life",
+      "likes": 612,
+      "releaseYear": 2005,
+      "genre": "Crunk",
+      "image": "https://i.scdn.co/image/ab67616d0000b27331ae0599dc09195638781382"
+      },
+      {
+      "id": 44,
+      "song": "Knuck If You Buck",
+      "artist": "Crime Mob",
+      "album": "Crime Mob",
+      "likes": 502,
+      "releaseYear": 2004,
+      "genre": "Crunk",
+      "image": "https://i.scdn.co/image/ab67616d0000b273ce782a6af8a03f968a8bf8c5"
+      },
+      {
+      "id": 45,
+      "song": "Goodies",
+      "artist": "Ciara ft. Petey Pablo",
+      "album": "Goodies",
+      "likes": 932,
+      "releaseYear": 2004,
+      "genre": "Crunk",
+      "image": "https://i.scdn.co/image/ab67616d0000b273c1e3659212de0f437bbf395e"
+      },
+      {
+      "id": 46,
+      "song": "No Problems",
+      "artist": "Lil Scrappy",
+      "album": "Bred 2 Die Born 2 Live",
+      "likes": 421,
+      "releaseYear": 2006,
+      "genre": "Crunk",
+      "image": "https://i.scdn.co/image/ab67616d0000b2734e5044657923bb6e9bdd8edd"
+      },
+      {
+        "id": 47,
+        "song": "Scary Monsters and Nice Sprites",
+        "artist": "Skrillex",
+        "album": "Scary Monsters and Nice Sprites",
+        "likes": 2345,
+        "releaseYear": 2010,
+        "genre": "Dubstep",
+        "image": "https://i.scdn.co/image/ab67616d0000b27381cfaf3b1359f7b579ea05e5"
+        },
+        {
+        "id": 48,
+        "song": "Promises",
+        "artist": "Skrillex & Nero Remix",
+        "album": "Promises",
+        "likes": 1678,
+        "releaseYear": 2011,
+        "genre": "Dubstep",
+        "image": "https://i.scdn.co/image/ab67616d0000b2734a00dec9ce1677ff4fbfeb91"
+        },
+        {
+        "id": 49,
+        "song": "Cinema",
+        "artist": "Benny Benassi ft. Gary Go",
+        "album": "Cinema",
+        "likes": 1456,
+        "releaseYear": 2011,
+        "genre": "Dubstep",
+        "image": "https://i.scdn.co/image/ab67616d0000b2734a1359f0874b33a592b68177"
+        },
+        {
+        "id": 50,
+        "song": "Bangarang",
+        "artist": "Skrillex ft. Sirah",
+        "album": "Bangarang",
+        "likes": 1987,
+        "releaseYear": 2011,
+        "genre": "Dubstep",
+        "image": "https://i.scdn.co/image/ab67616d0000b2736081278cb62df2757d55633b"
+        },
+        {
+        "id": 51,
+        "song": "I Can't Stop",
+        "artist": "Flux Pavilion",
+        "album": "Lines in Wax",
+        "likes": 1325,
+        "releaseYear": 2010,
+        "genre": "Dubstep",
+        "image": "https://i.scdn.co/image/ab67616d0000b2733d9de37d9217f51dc24f1a53"
+        },
+        {
+        "id": 52,
+        "song": "Ghosts 'n' Stuff",
+        "artist": "Deadmau5 ft. Rob Swire",
+        "album": "For Lack of a Better Name",
+        "likes": 1765,
+        "releaseYear": 2008,
+        "genre": "Dubstep",
+        "image": "https://i.scdn.co/image/ab67616d0000b273d49d976721f4dc6b3c6225ad"
+        },
+        {
+        "id": 53,
+        "song": "Centuries of Damn",
+        "artist": "Death Grips",
+        "album": "Jenny Death",
+        "likes": 1043,
+        "releaseYear": 2015,
+        "genre": "Dubstep",
+        "image": "https://i1.sndcdn.com/artworks-000119441949-wsa6p9-t500x500.jpg"
+        },
+        {
+        "id": 54,
+        "song": "Tetris",
+        "artist": "Doctor P",
+        "album": "Tetris",
+        "likes": 899,
+        "releaseYear": 2011,
+        "genre": "Dubstep",
+        "image": "https://i.scdn.co/image/ab67616d0000b2739bc3c8fc8b0653f7e85f1897"
+        },
+        {
+          "id": 55,
+          "song": "The Trooper",
+          "artist": "Iron Maiden",
+          "album": "Piece of Mind",
+          "likes": 3987,
+          "releaseYear": 1983,
+          "genre": "Metal",
+          "image": "https://i.scdn.co/image/ab67616d0000b2739dc631e463aa7a1dd794cc19"
+          },
+          {
+          "id": 56,
+          "song": "Paranoid",
+          "artist": "Black Sabbath",
+          "album": "Paranoid",
+          "likes": 3245,
+          "releaseYear": 1970,
+          "genre": "Metal",
+          "image": "https://i.scdn.co/image/ab67616d0000b273d5fccf9ce08b6a1e7d12a222"
+          },
+          {
+          "id": 57,
+          "song": "One",
+          "artist": "Metallica",
+          "album": "...And Justice for All",
+          "likes": 5123,
+          "releaseYear": 1988,
+          "genre": "Metal",
+          "image": "https://i.scdn.co/image/ab67616d0000b2737c05e69390ab7c628a83cee7"
+          },
+          {
+          "id": 58,
+          "song": "Fear of the Dark",
+          "artist": "Iron Maiden",
+          "album": "Fear of the Dark",
+          "likes": 3789,
+          "releaseYear": 1992,
+          "genre": "Metal",
+          "image": "https://i.scdn.co/image/ab67616d0000b2732d0441e76ff51f514613e00c"
+          },
+          {
+          "id": 59,
+          "song": "Crazy Train",
+          "artist": "Ozzy Osbourne",
+          "album": "Blizzard of Ozz",
+          "likes": 2876,
+          "releaseYear": 1980,
+          "genre": "Metal",
+          "image": "https://i.scdn.co/image/ab67616d0000b273ed5c19fd9206d2d7e73c140c"
+          },
+          {
+          "id": 60,
+          "song": "Raining Blood",
+          "artist": "Slayer",
+          "album": "Reign in Blood",
+          "likes": 2154,
+          "releaseYear": 1986,
+          "genre": "Metal",
+          "image": "https://i.scdn.co/image/ab67616d0000b273fd833375c806981a61bb82ec"
+          },
+          {
+          "id": 61,
+          "song": "The Number of the Beast",
+          "artist": "Iron Maiden",
+          "album": "The Number of the Beast",
+          "likes": 3345,
+          "releaseYear": 1982,
+          "genre": "Metal",
+          "image": "https://i.scdn.co/image/ab67616d0000b273f63f421ee3bcc38b9f4e5965"
+          },
+          {
+          "id": 62,
+          "song": "Painkiller",
+          "artist": "Judas Priest",
+          "album": "Painkiller",
+          "likes": 2654,
+          "releaseYear": 1990,
+          "genre": "Metal",
+          "image": "https://i.scdn.co/image/ab67616d0000b27360db4ca924d17bc6754e89aa"
+          },
+          {
+          "id": 64,
+          "song": "Ace of Spades",
+          "artist": "Motörhead",
+          "album": "Ace of Spades",
+          "likes": 3098,
+          "releaseYear": 1980,
+          "genre": "Metal",
+          "image": "https://i.scdn.co/image/ab67616d0000b273a2b0293d8044d05202993f9e"
+          }             
   ]
 }
