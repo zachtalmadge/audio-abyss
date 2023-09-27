@@ -153,6 +153,18 @@ div.card-body {
     background-color: transparent;
     border-color: whitesmoke
 }
+.modal-body {
+    background-color: black;
+    color: whitesmoke;
+}
+.modal-header {
+    background-color: black;
+    color: whitesmoke;
+}
+.form-control {
+    background-color: #9f045c;
+    color: whitesmoke;
+}
 
 /* .colorChange {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
