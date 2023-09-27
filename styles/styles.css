@@ -28,11 +28,11 @@
     transition: box-shadow 0.3s ease-in-out;
 }
 .card-glow-originalscore {
-    box-shadow: 0 0 15px white;
+    box-shadow: 0 0 75px white;
     transition: box-shadow 0.3s ease-in-out;
 }
 .card-glow-kpop {
-    box-shadow: 0 0 15px rgb(249, 29, 143);
+    box-shadow: 0 0 75px rgb(249, 29, 143);
     transition: box-shadow 0.3s ease-in-out;
 }
 
