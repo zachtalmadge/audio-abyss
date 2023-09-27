@@ -58,7 +58,7 @@ body {
     /* padding: 0 10px 0 0 */
 }
 
-.album-text {
+.card-text {
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -66,6 +66,13 @@ body {
 }
 
 .card-title {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-album {
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -166,6 +173,9 @@ div.card-body {
     color: whitesmoke;
 }
 
+.modal-footer {
+    background-color: black;
+}
 /* .colorChange {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 } */
