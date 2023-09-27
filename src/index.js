@@ -18,19 +18,37 @@ const songDetailAlbumArt = document.querySelector('#songDetailAlbumArt')
 //function to change hover effect based on genre
 const genreColorChange = (element, songObj) => {
   element.addEventListener('mouseover', () => {
-    console.log('mousedover')
-    let test = songObj.genre
-    // if (songObj.genre === "House") {
-    //   element.classList = 'card-glow-house'
-    // }
+
     switch (songObj.genre) {
     case "House":
       element.classList.add('card-glow-house')
       break;
-
+    case "Pop":
+      element.classList.add('card-glow-pop')
+      break;
+    case "Dubstep":
+      element.classList.add('card-glow-dubstep')
+      break;
+    case "Rock":
+      element.classList.add('card-glow-rock')
+      break;
+    case "Metal":
+      element.classList.add('card-glow-metal')
+      break;
+    case "Crunk":
+      element.classList.add('card-glow-crunk')
+      break;
+    case "Alternative":
+      element.classList.add('card-glow-alternative')
+      break;
+    case "K-Pop":
+      element.classList.add('card-glow-kpop')
+      break;
+    case "Original Score":
+      element.classList.add('card-glow-originalscore')
+      break;
     default:
       console.log('New genre added')
-
   }
   })
 
