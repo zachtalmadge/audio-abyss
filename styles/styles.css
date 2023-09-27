@@ -1,5 +1,38 @@
-.card-glow {
-    box-shadow: 0 0 15px rgb(0,123,255);
+/* //hover card effects */
+.card-glow-house {
+    box-shadow: 0 0 75px teal;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.card-glow-pop {
+    box-shadow: 0 0 75px rgb(241, 155, 146);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.card-glow-dubstep {
+    box-shadow: 0 0 75px orange;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.card-glow-metal {
+    box-shadow: 0 0 75px red;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.card-glow-rock {
+    box-shadow: 0 0 75px rgb(7, 7, 162);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.card-glow-crunk {
+    box-shadow: 0 0 75px gold;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.card-glow-alternative {
+    box-shadow: 0 0 75px rgb(87, 2, 87);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.card-glow-originalscore {
+    box-shadow: 0 0 75px white;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.card-glow-kpop {
+    box-shadow: 0 0 75px rgb(249, 29, 143);
     transition: box-shadow 0.3s ease-in-out;
 }
 

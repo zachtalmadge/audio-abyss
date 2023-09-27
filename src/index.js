@@ -15,6 +15,45 @@ const songDetailGenre = document.querySelector('#songDetailGenre')
 const songDetailAlbumArt = document.querySelector('#songDetailAlbumArt')
 
 //! WESLEY'S CODE
+//function to change hover effect based on genre
+const genreColorChange = (element, songObj) => {
+  element.addEventListener('mouseover', () => {
+
+    switch (songObj.genre) {
+    case "House":
+      element.classList.add('card-glow-house')
+      break;
+    case "Pop":
+      element.classList.add('card-glow-pop')
+      break;
+    case "Dubstep":
+      element.classList.add('card-glow-dubstep')
+      break;
+    case "Rock":
+      element.classList.add('card-glow-rock')
+      break;
+    case "Metal":
+      element.classList.add('card-glow-metal')
+      break;
+    case "Crunk":
+      element.classList.add('card-glow-crunk')
+      break;
+    case "Alternative":
+      element.classList.add('card-glow-alternative')
+      break;
+    case "K-Pop":
+      element.classList.add('card-glow-kpop')
+      break;
+    case "Original Score":
+      element.classList.add('card-glow-originalscore')
+      break;
+    default:
+      console.log('New genre added')
+  }
+  })
+
+}
+
 const renderSongCard = (song) => {
   let div1 = document.createElement('div')
     div1.className = "col-md-4"
@@ -50,13 +89,16 @@ const renderSongCard = (song) => {
     div2.append(img, divBody)
     div1.append(div2)
     songDisplayCards.append(div1)
+
+
     // add mouseover event listener
-    div2.addEventListener('mouseover', () => {
-      div2.classList.add('card-glow')
-    })
+    genreColorChange(div2, song)
+
     div2.addEventListener('mouseout', () => {
-      div2.classList.remove('card-glow')
+      div2.classList = "card" //reset classList to card
     })
+
+
     clickHeart(heartButton, song);
 }
 
