@@ -549,6 +549,96 @@
         "releaseYear": 2011,
         "genre": "Dubstep",
         "image": "https://i.scdn.co/image/ab67616d0000b2739bc3c8fc8b0653f7e85f1897"
-        }             
+        },
+        {
+          "id": 55,
+          "song": "The Trooper",
+          "artist": "Iron Maiden",
+          "album": "Piece of Mind",
+          "likes": 3987,
+          "releaseYear": 1983,
+          "genre": "Metal",
+          "image": "https://i.scdn.co/image/ab67616d0000b2739dc631e463aa7a1dd794cc19"
+          },
+          {
+          "id": 56,
+          "song": "Paranoid",
+          "artist": "Black Sabbath",
+          "album": "Paranoid",
+          "likes": 3245,
+          "releaseYear": 1970,
+          "genre": "Metal",
+          "image": "https://i.scdn.co/image/ab67616d0000b273d5fccf9ce08b6a1e7d12a222"
+          },
+          {
+          "id": 57,
+          "song": "One",
+          "artist": "Metallica",
+          "album": "...And Justice for All",
+          "likes": 5123,
+          "releaseYear": 1988,
+          "genre": "Metal",
+          "image": "https://i.scdn.co/image/ab67616d0000b2737c05e69390ab7c628a83cee7"
+          },
+          {
+          "id": 58,
+          "song": "Fear of the Dark",
+          "artist": "Iron Maiden",
+          "album": "Fear of the Dark",
+          "likes": 3789,
+          "releaseYear": 1992,
+          "genre": "Metal",
+          "image": "https://i.scdn.co/image/ab67616d0000b2732d0441e76ff51f514613e00c"
+          },
+          {
+          "id": 59,
+          "song": "Crazy Train",
+          "artist": "Ozzy Osbourne",
+          "album": "Blizzard of Ozz",
+          "likes": 2876,
+          "releaseYear": 1980,
+          "genre": "Metal",
+          "image": "https://i.scdn.co/image/ab67616d0000b273ed5c19fd9206d2d7e73c140c"
+          },
+          {
+          "id": 60,
+          "song": "Raining Blood",
+          "artist": "Slayer",
+          "album": "Reign in Blood",
+          "likes": 2154,
+          "releaseYear": 1986,
+          "genre": "Metal",
+          "image": "https://i.scdn.co/image/ab67616d0000b273fd833375c806981a61bb82ec"
+          },
+          {
+          "id": 61,
+          "song": "The Number of the Beast",
+          "artist": "Iron Maiden",
+          "album": "The Number of the Beast",
+          "likes": 3345,
+          "releaseYear": 1982,
+          "genre": "Metal",
+          "image": "https://i.scdn.co/image/ab67616d0000b273f63f421ee3bcc38b9f4e5965"
+          },
+          {
+          "id": 62,
+          "song": "Painkiller",
+          "artist": "Judas Priest",
+          "album": "Painkiller",
+          "likes": 2654,
+          "releaseYear": 1990,
+          "genre": "Metal",
+          "image": "https://i.scdn.co/image/ab67616d0000b27360db4ca924d17bc6754e89aa"
+          },
+          {
+          "id": 64,
+          "song": "Ace of Spades",
+          "artist": "Motörhead",
+          "album": "Ace of Spades",
+          "likes": 3098,
+          "releaseYear": 1980,
+          "genre": "Metal",
+          "image": "https://i.scdn.co/image/ab67616d0000b273a2b0293d8044d05202993f9e"
+          }             
   ]
 }
