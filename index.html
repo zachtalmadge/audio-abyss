@@ -12,31 +12,34 @@
     <title>Audio Abyss</title>
   </head>
   <body>
-    <!-- Jumbotron Bootstrap Component-->
-    <div class="jumbotron jumbotron-fluid text-center text-light">
-      <div class="container">
-        <img src="./assets/AudioAbyssLogo.png" class="header-logo">
-        <!-- button to fetch songs-->
-        <button id="refresh-button" class="btn btn-primary">Refresh new songs</button>
-        <!-- button for form modal-->
-        <button id= "add-button" class="btn btn-outline-primary" data-toggle="modal" data-target="#formModal">Add a song</button>
-        <!-- Filter by Genre-->
-        <!-- <form class="d-inline-block"> -->
-          <select class="form-select" id="genreDropdown" data-toggle="dropdown" aria-label="Filter by Genre">
-            <option  value="" disabled selected >Filter by Genre</option>
-            <option class="dropdown-item" value="House">House</option>
-            <option class="dropdown-item" value="Pop">Pop</option>
-            <option class="dropdown-item" value="Dubstep">Dubstep</option>
-            <option class="dropdown-item" value="Rock">Rock</option>
-            <option class="dropdown-item" value="Metal">Metal</option>
-            <option class="dropdown-item" value="Crunk">Crunk</option>
-            <option class="dropdown-item" value="Alternative">Alternative</option>
-            <option class="dropdown-item" value="Original Score">Original Score</option>
-            <option class="dropdown-item" value="K-Pop">K-Pop</option>
-          </select>
-        <!-- </form> -->
-      </div>
-    </div><!-- end jumbotron -->
+
+<div class="container my-5">
+  <div class="row">
+    <div class="col-md-8">
+      <img src="./assets/AudioAbyssLogo.png" class="img-fluid">
+    </div>
+    <div class="col-md-4 d-flex flex-column justify-content-around">
+      <button id="refresh-button" class="btn btn-primary" style="display: block; margin-top: 100px">Refresh New Songs</button>
+      <!-- button for form modal-->
+      <button id= "add-button" class="btn btn-outline-primary my-3" data-toggle="modal" data-target="#formModal" style="display: block;">Add a Song</button>
+      <!-- Filter by Genre-->
+      <!-- <form class="d-inline-block"> -->
+        <select class="form-select" id="genreDropdown" style="margin-bottom: 100px" data-toggle="dropdown" aria-label="Filter by Genre" style="display: block;">
+          <option  value="" disabled selected >Filter by Genre</option>
+          <option class="dropdown-item" value="House">House</option>
+          <option class="dropdown-item" value="Pop">Pop</option>
+          <option class="dropdown-item" value="Dubstep">Dubstep</option>
+          <option class="dropdown-item" value="Rock">Rock</option>
+          <option class="dropdown-item" value="Metal">Metal</option>
+          <option class="dropdown-item" value="Crunk">Crunk</option>
+          <option class="dropdown-item" value="Alternative">Alternative</option>
+          <option class="dropdown-item" value="Original Score">Original Score</option>
+          <option class="dropdown-item" value="K-Pop">K-Pop</option>
+        </select>
+      <!-- </form> -->
+    </div>
+  </div>
+</div>
 
     <!-- card component for displaying singles -->
     <div class="container">

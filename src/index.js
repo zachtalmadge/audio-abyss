@@ -77,14 +77,14 @@ const renderSongCard = (song) => {
       <span class="album-text d-inline-block">Album: ${song.album} <br>`
 
     let heartButton = document.createElement('button')
-    heartButton.className = "btn btn-outline-danger"
+    heartButton.className = "btn btn-outline-danger btn-block"
     heartButton.id = "like-btn"
       let i = document.createElement('i')
       i.className = "far fa-heart"
       heartButton.appendChild(i)
 
     divBody.append(h5, p)
-    divBody.innerHTML += `<button data-name="${song.song}" class="btn btn-primary details" data-toggle="modal" data-target="#songDetailModal">Details</button>`
+    divBody.innerHTML += `<button data-name="${song.song}" class="btn btn-primary details btn-block" data-toggle="modal" data-target="#songDetailModal">Details</button>`
     divBody.append(heartButton)
 
     div2.append(img, divBody)
@@ -233,9 +233,9 @@ const patchRequest = (operatorString, songObj) => {
 const clickHeart = (element, songObj) => {
   element.addEventListener('click', () => {
     console.log(songObj)
-    element.className === "btn btn-outline-danger" ? element.className = "btn btn-danger": element.className = "btn btn-outline-danger"
+    element.className === "btn btn-outline-danger btn-block" ? element.className = "btn btn-danger btn-block": element.className = "btn btn-outline-danger btn-block"
 
-    if (element.className === "btn btn-danger") {
+    if (element.className === "btn btn-danger btn-block") {
       patchRequest('+', songObj)
     }
     else {
