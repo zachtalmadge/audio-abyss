@@ -78,6 +78,7 @@ const renderSongCard = (song) => {
 
     let heartButton = document.createElement('button')
     heartButton.className = "btn btn-outline-danger"
+    heartButton.id = "like-btn"
       let i = document.createElement('i')
       i.className = "far fa-heart"
       heartButton.appendChild(i)

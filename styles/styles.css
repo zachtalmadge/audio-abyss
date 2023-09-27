@@ -73,6 +73,50 @@
     border-radius: 0.25rem;
     background-color: #ffffff54;
 }
+body {
+    background-color: black;
+}
+div.jumbotron {
+    background-color: black;
+}
+div.card-body {
+    background-color: black;
+    text-emphasis-color: white;
+    color: #ffffff;
+}
+#refresh-button {
+    background-color: #7b66fb;
+    border-color: #7b66fb;
+    color: white;
+}
+.btn-primary {
+    background-color: #9f045c;
+    border-color: #9f045c;
+    color: white;
+}
+.btn-outline-primary {
+    background-color: #fa6cae;
+    border-color: #fa6cae;
+    color: white;
+}
+#refresh-button:hover,
+#refresh-button:focus,
+#refresh-button:active,
+#refresh-button.active,
+.open>.dropdown-toggle#refresh-button {
+    color: #fff;
+    background-color: #fa6cae;
+    border-color: #285e8e;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary.active,
+.open>.dropdown-toggle.btn-outline-primary {
+    color: #fff;
+    background-color: #7b66fb;
+    border-color: #285e8e;
+}
 
 /* .colorChange {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;

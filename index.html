@@ -13,14 +13,14 @@
   </head>
   <body>
     <!-- Jumbotron Bootstrap Component-->
-    <div class="jumbotron jumbotron-fluid text-center bg-dark text-light">
+    <div class="jumbotron jumbotron-fluid text-center text-light">
       <div class="container">
         <h1 class="display-4">Audio Abyss</h1>
         <p class="lead">Finding new music is hard. We're here to help.</p>
         <!-- button to fetch songs-->
         <button id="refresh-button" class="btn btn-primary">Refresh new songs</button>
         <!-- button for form modal-->
-        <button class="btn btn-outline-warning" data-toggle="modal" data-target="#formModal">Add a song</button>
+        <button id= "add-button" class="btn btn-outline-primary" data-toggle="modal" data-target="#formModal">Add a song</button>
         <!-- Filter by Genre-->
         <!-- <form class="d-inline-block"> -->
           <select class="form-select form-select-lg" id="genreDropdown" data-toggle="dropdown" aria-label="Filter by Genre">
@@ -45,7 +45,7 @@
     </div><!-- end container-->
 
     <!-- Footer -->
-    <div class="container-fluid bg-dark py-5 text-center my-5">
+    <div class="container-fluid py-5 text-center my-5">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
