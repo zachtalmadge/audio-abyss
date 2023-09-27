@@ -165,6 +165,10 @@ div.card-body {
     background-color: #9f045c;
     color: whitesmoke;
 }
+.custom-container {
+    padding-left:100px;
+    padding-right:100px;
+}
 
 /* .colorChange {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
