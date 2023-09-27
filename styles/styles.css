@@ -72,6 +72,13 @@ body {
     white-space: nowrap;
 }
 
+.card-album {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 #genreDropdown {
     display: inline-block;
     margin-bottom: 0;
