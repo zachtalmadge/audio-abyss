@@ -1,3 +1,17 @@
+/* full webpage */
+.jumbotron {
+    background-color: black;
+}
+
+body {
+    background-color: black;
+}
+
+.header-logo {
+    width: 75%;
+    margin: auto;
+}
+
 /* //hover card effects */
 .card-glow-house {
     box-shadow: 0 0 75px teal;
