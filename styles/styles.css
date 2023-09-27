@@ -87,6 +87,59 @@ body {
     border-radius: 0.25rem;
     background-color: #ffffff54;
 }
+body {
+    background-color: black;
+}
+div.jumbotron {
+    background-color: black;
+}
+div.card-body {
+    background-color: black;
+    text-emphasis-color: white;
+    color: #ffffff;
+}
+#refresh-button {
+    background-color: #7b66fb;
+    border-color: #7b66fb;
+    color: white;
+}
+.btn-primary {
+    background-color: #9f045c;
+    border-color: #9f045c;
+    color: white;
+}
+.btn-outline-primary {
+    color: #fa6cae;
+    background-color: transparent;
+    border-color: #fa6cae;
+}
+#refresh-button:hover,
+#refresh-button:focus,
+#refresh-button:active,
+#refresh-button.active,
+.open>.dropdown-toggle#refresh-button {
+    color: #7b66fb;
+    background-color: transparent;
+    border-color: #7b66fb;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active,
+.btn-outline-primary.active,
+.open>.dropdown-toggle.btn-outline-primary {
+    color: #white;
+    background-color: #fa6cae;
+    border-color: #fa6cae;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: transparent;
+    border-color: #9f045c
+}
 
 /* .colorChange {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
