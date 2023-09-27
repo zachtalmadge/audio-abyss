@@ -172,6 +172,10 @@ div.card-body {
     background-color: #9f045c;
     color: whitesmoke;
 }
+.custom-container {
+    padding-left:100px;
+    padding-right:100px;
+}
 
 .modal-footer {
     background-color: black;
