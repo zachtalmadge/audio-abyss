@@ -30,7 +30,7 @@ body {
     transition: box-shadow 0.3s ease-in-out;
 }
 .card-glow-rock {
-    box-shadow: 0 0 75px rgb(7, 7, 162);
+    box-shadow: 0 0 75px rgb(53, 53, 222);
     transition: box-shadow 0.3s ease-in-out;
 }
 .card-glow-crunk {
@@ -38,7 +38,7 @@ body {
     transition: box-shadow 0.3s ease-in-out;
 }
 .card-glow-alternative {
-    box-shadow: 0 0 75px rgb(87, 2, 87);
+    box-shadow: 0 0 75px rgb(181, 3, 181);
     transition: box-shadow 0.3s ease-in-out;
 }
 .card-glow-originalscore {
