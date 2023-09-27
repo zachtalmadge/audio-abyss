@@ -95,27 +95,36 @@ div.card-body {
     color: white;
 }
 .btn-outline-primary {
-    background-color: #fa6cae;
+    color: #fa6cae;
+    background-color: transparent;
     border-color: #fa6cae;
-    color: white;
 }
 #refresh-button:hover,
 #refresh-button:focus,
 #refresh-button:active,
 #refresh-button.active,
 .open>.dropdown-toggle#refresh-button {
-    color: #fff;
-    background-color: #fa6cae;
-    border-color: #285e8e;
+    color: #7b66fb;
+    background-color: transparent;
+    border-color: #7b66fb;
 }
 .btn-outline-primary:hover,
 .btn-outline-primary:focus,
 .btn-outline-primary:active,
 .btn-outline-primary.active,
 .open>.dropdown-toggle.btn-outline-primary {
+    color: #white;
+    background-color: #fa6cae;
+    border-color: #fa6cae;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open>.dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #7b66fb;
-    border-color: #285e8e;
+    background-color: transparent;
+    border-color: #9f045c
 }
 
 /* .colorChange {
