@@ -172,7 +172,8 @@ const addSongEventListener = () => {
     let releaseYearInput = event.target['release-year'].value
 
     //fetch to do a Post request
-    fetch(URL, {
+    if (titleInput && artistInput && albumInput && albumImgUrl && genreInput && releaseYearInput) {
+          fetch(URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -192,7 +193,12 @@ const addSongEventListener = () => {
       .then(() => { displaySongDetails(titleInput) })
       .catch(error => alert(error))
     addSongForm.reset();
-  })
+  }
+  else {
+    alert("Please fill in all inputs!")
+  }
+    }
+)
 }
 
 //patch request function
