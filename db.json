@@ -365,7 +365,7 @@
       "song": "Hey, Soul Sister",
       "artist": "Train",
       "album": "Train",
-      "likes": 0,
+      "likes": 1,
       "releaseYear": "2018",
       "genre": "Pop",
       "image": "https://i.scdn.co/image/ab67616d0000b2736ff8bc258e3ebc835ffe14ca"
@@ -585,7 +585,7 @@
       "song": "Fear of the Dark",
       "artist": "Iron Maiden",
       "album": "Fear of the Dark",
-      "likes": 3788,
+      "likes": 3789,
       "releaseYear": 1992,
       "genre": "Metal",
       "image": "https://i.scdn.co/image/ab67616d0000b2732d0441e76ff51f514613e00c"
