@@ -40,5 +40,8 @@ $ npx json-server --watch db.json
 - Wesley Smith
 - Zachary Talmadge </b>
 
+## Read more about this project:
+https://medium.com/@zach.talmadge.webdev/audio-abyss-a-deep-dive-a17d567d1051
+
 ## License
 MIT
