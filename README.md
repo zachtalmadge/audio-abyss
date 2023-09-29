@@ -8,6 +8,7 @@ Welcome to Audio Abyss, the ultimate destination for those seeking fresh musical
 
 Whether you're looking to escape the monotony of your current playlist, or simply want to embark on a spontaneous auditory adventure, Audio Abyss is your gateway to the uncharted territories of sound.
 
+<img src="./assets/aa_screenshot.png">
 
 ## Technologies Used
 
